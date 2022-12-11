@@ -2,9 +2,69 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: hsl(230, 17%, 14%);
+    font-size: 14px;
+    color: white;
 }
 
 .header{
     background-color: hsl(232, 19%, 15%);
     padding: 20px;
+    display: flex;
+    color: white;
+    font-weight: 700;
+}
+.main{
+    flex-direction: column;
+}
+.main h2, .main p{
+    margin: 0;
+    letter-spacing: .4px;
+}
+.header .main p{
+    color: hsl(228, 12%, 44%);
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.header p{
+    color: hsl(228, 12%, 44%);
+    margin-left: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color{
+    width: 100%;
+    height: 3px;
+    border-start-end-radius: 3px;
+    background-color: hsl(208, 92%, 53%);
+}
+
+.content{
+    background-color: hsl(228, 28%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    padding: 30px;
+}
+.tag{
+    display: flex;
+}
+.tag p{
+    margin-top: 3px !important;
+    margin: 0;
+    color: hsl(228, 12%, 44%);
+    margin-left: 10px ;
+}
+
+.content span{
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+    font-size: 12px;
 }
