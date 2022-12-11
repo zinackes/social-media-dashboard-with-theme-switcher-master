@@ -12,6 +12,9 @@ body{
     display: flex;
     color: white;
     font-weight: 700;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 50px;
 }
 .main{
     flex-direction: column;
@@ -21,7 +24,7 @@ body{
     letter-spacing: .4px;
 }
 .header .main p{
-    color: hsl(228, 12%, 44%);
+    color: hsl(228, 34%, 66%);
     margin-top: 5px;
     font-size: 13px;
 }
@@ -35,13 +38,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 35px;
 }
 
 .color{
     width: 100%;
-    height: 3px;
-    border-start-end-radius: 3px;
-    background-color: hsl(208, 92%, 53%);
+    height: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .content{
@@ -50,21 +54,44 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 150px;
+    width: 200px;
     padding: 30px;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+.content > p{
+    margin-top: 1px;
+    letter-spacing: 5px;
+    color: hsl(228, 34%, 66%);
 }
 .tag{
     display: flex;
+    align-items: center;
 }
-.tag p{
-    margin-top: 3px !important;
-    margin: 0;
-    color: hsl(228, 12%, 44%);
-    margin-left: 10px ;
+.tag span{
+    color: hsl(228, 34%, 66%);
+    font-weight: bold;
+    margin-left: 10px;
 }
-
-.content span{
+.fa-caret-down{
+    color: hsl(356, 69%, 56%);
+}
+.fa-caret-up{
     color: hsl(163, 72%, 41%);
+}
+.fa-solid{
+    margin-top: 15px;
     font-weight: 700;
     font-size: 12px;
+}
+
+.fa-solid > p{
+    margin: 0;
+    display: inline;
+    margin-left: 2px;
+    font-family: 'Inter';
 }
