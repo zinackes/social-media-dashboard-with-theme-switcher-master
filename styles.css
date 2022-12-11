@@ -1,0 +1,10 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: hsl(230, 17%, 14%);
+}
+
+.header{
+    background-color: hsl(232, 19%, 15%);
+    padding: 20px;
+}
