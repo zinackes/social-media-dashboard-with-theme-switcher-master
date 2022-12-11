@@ -4,6 +4,7 @@ body{
     background-color: hsl(230, 17%, 14%);
     font-size: 14px;
     color: white;
+    font-weight: 700;
 }
 
 .header{
@@ -11,21 +12,23 @@ body{
     padding: 20px;
     display: flex;
     color: white;
-    font-weight: 700;
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 50px;
 }
+
 .main{
     flex-direction: column;
 }
-.main h2, .main p{
+.main h1{
+    margin-bottom: 5px;
+}
+.main h1, .main p{
     margin: 0;
     letter-spacing: .4px;
 }
-.header .main p{
+.p{
     color: hsl(228, 34%, 66%);
-    margin-top: 5px;
     font-size: 13px;
 }
 
@@ -34,9 +37,10 @@ body{
     margin-left: auto;
 }
 
-.flex{
-    display: flex;
+.grid{
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(4, 260px);
     justify-content: center;
     gap: 35px;
 }
@@ -56,10 +60,12 @@ body{
     flex-direction: column;
     width: 200px;
     padding: 30px;
+    border-radius: 4px;
 }
 
 .content h1{
     font-size: 60px;
+    font-weight: 900;
     margin-bottom: 0;
     margin-top: 25px;
 }
@@ -94,4 +100,41 @@ body{
     display: inline;
     margin-left: 2px;
     font-family: 'Inter';
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content-{
+    background-color: hsl(228, 28%, 20%);
+    width: 220px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.content- > .p{
+    float: left;
+    margin: 0;
+}
+.content- > img{
+    float: right;
+}
+
+
+
+
+
+
+
+@media (max-width:1150px){
+    .grid{
+        grid-template-columns: repeat(2, 260px);
+    }
+ }
+
+@media (max-width: 640px){
+    .grid{
+        grid-template-columns: repeat(1, 260px);
+    }
 }
