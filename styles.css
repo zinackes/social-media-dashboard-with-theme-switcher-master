@@ -89,7 +89,7 @@ body{
     width: 20px;
     left: 4px;
     bottom: 2.5px;
-    background-color: black;
+    background-color: hsl(230, 17%, 14%);
     -webkit-transition: .8s;
     transition: .8s;
   }
