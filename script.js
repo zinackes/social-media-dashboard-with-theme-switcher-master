@@ -1,10 +1,11 @@
 var header = document.querySelector(".header")
-var title = document.querySelector("#title")
+var title = document.querySelector(".title")
 var background = document.querySelector("body")
 var box = document.querySelectorAll(".content")
 var number = document.querySelectorAll(".content > h1")
 var box2 = document.querySelectorAll(".content_")
 var number2 = document.querySelectorAll(".content_ > h1")
+var slider = document.querySelector(".slider")
 
 function Mode(checkbox){
 

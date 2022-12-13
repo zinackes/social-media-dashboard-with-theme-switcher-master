@@ -1,3 +1,20 @@
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -17,6 +34,7 @@ body{
     padding-right: 100px;
     margin-bottom: 40px;
     transition: all .8s ease-in-out;
+    animation: 1s ease-out 0s 1 slideInFromTop;
 }
 .header-light{
     background-color: hsl(225, 100%, 98%);
@@ -62,6 +80,10 @@ body{
     display: inline-block;
     width: 50px;
     height: 25px;
+    transition: 0.3s;
+  }
+  .switch:hover{
+    opacity: 0.7;
   }
   
   .switch input { 
@@ -88,17 +110,17 @@ body{
     height: 20px;
     width: 20px;
     left: 4px;
-    bottom: 2.5px;
+    bottom: 2.1px;
     background-color: hsl(230, 17%, 14%);
     -webkit-transition: .8s;
     transition: .8s;
   }
   
   input:checked + .slider {
-    background: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
+    background: hsl(230, 22%, 74%);
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-  
-  
   input:checked + .slider:before {
     -webkit-transform: translateX(22px);
     -ms-transform: translateX(22px);
@@ -141,6 +163,16 @@ body{
     padding: 30px;
     transition: all .8s ease-in-out;
     border-radius: 4px;
+    cursor: pointer;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+.content:hover{
+    filter: brightness(130%);
+    transition: 0.3s;
+}
+.content_:hover{
+    filter: brightness(130%);
+    transition: 0.3s;
 }
 .content-light{
     background-color: hsl(227, 47%, 96%);
@@ -194,6 +226,7 @@ body{
 .title{
     text-align: center;
     margin-top: 40px;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
 .content_{
@@ -202,6 +235,8 @@ body{
     padding: 25px;
     border-radius: 4px;
     transition: all .8s ease-in-out;
+    cursor: pointer;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 .content_-light{
     background-color: hsl(227, 47%, 96%);
@@ -225,14 +260,6 @@ body{
 .content_ > .fa-solid{
     float: right;
 }
-
-
-
-
-
-
-
-
 
 
 
