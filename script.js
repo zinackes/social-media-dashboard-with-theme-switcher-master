@@ -1,5 +1,5 @@
 var header = document.querySelector(".header")
-var title = document.querySelector(".title")
+var title = document.querySelectorAll(".title")
 var background = document.querySelector("body")
 var box = document.querySelectorAll(".content")
 var number = document.querySelectorAll(".content > h1")
@@ -12,7 +12,9 @@ function Mode(checkbox){
     if(checkbox.checked){
         header.classList.add("header-light");
         background.style.backgroundColor = "white";
-        title.classList.add("title-light");
+        for  (let i = 0; i < title.length; i++){
+            title[i].classList.add("title-light");
+        }
         for  (let i = 0; i < box.length; i++){
             box[i].classList.add("content-light");
             number[i].classList.add("number-light");
@@ -25,7 +27,9 @@ function Mode(checkbox){
     else{
         header.classList.remove("header-light");
         background.removeAttribute("style");
-        title.classList.remove("title-light");
+        for  (let i = 0; i < title.length; i++){
+            title[i].classList.remove("title-light");
+        }
         for  (let i = 0; i < box.length; i++){
             box[i].classList.remove("content-light");
             number[i].classList.remove("number-light");

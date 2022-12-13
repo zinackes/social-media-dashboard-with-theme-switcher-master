@@ -175,8 +175,8 @@ body{
     flex-direction: column;
     width: 200px;
     padding: 30px;
-    transition: all .8s ease-in-out;
     border-radius: 4px;
+    transition: all .8s ease-in-out;
     cursor: pointer;
     animation: 1s ease-out 0s 1 slideInFromTop;
 }
