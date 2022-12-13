@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   <link href="styles.css" rel="stylesheet">
+  <link href="responsives.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/9738b737cc.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -13,16 +14,19 @@
 <body>
     <header class="header">
       <div class="main">
-        <h1 id="title" style="transition: all .8s ease-in-out;">Social Media Dashboard</h1>
+        <h1 class="title" style="transition: all .8s ease-in-out;">Social Media Dashboard</h1>
         <p class="p">Total Followers: 23,004</p>
       </div>
-      <p>Dark Mode</p>
-      <div class="select">
-        <label class="switch">
-            <input type="checkbox" name="Mode" onclick="Mode(this)">
-            <span class="slider round"></span>
-        </label>
-    </div>
+      <div class="separator"></div>
+      <div class="darkmode">
+        <p>Dark Mode</p>
+        <div class="select">
+          <label class="switch">
+              <input type="checkbox" name="Mode" onclick="Mode(this)">
+              <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
     </header>
 
       <div class="grid">

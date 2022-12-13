@@ -1,0 +1,31 @@
+@media (max-width:1150px){
+    .grid{
+        grid-template-columns: repeat(2, 260px);
+    }
+ }
+
+@media (max-width: 640px){
+    .grid{
+        grid-template-columns: repeat(1, 260px);
+    }
+    .main{
+        text-align: center;
+        width: 150px;
+    }
+    .main > h1{
+        margin-bottom: 5px;
+    }
+    .darkmode{
+        margin-left: 0;
+    }
+    .separator{
+        visibility: visible !important;
+    }
+}
+
+@media (max-width: 680px){
+    .darkmode{
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -25,6 +25,20 @@ body{
     transition: all .8s ease-in-out;
 }
 
+.separator{
+    height: 139px;
+    width: 1px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+}
+
+.darkmode{
+    margin-left: auto; 
+    display: flex;
+}
+
 .header{
     background-color: hsl(232, 19%, 15%);
     padding: 20px;
@@ -35,6 +49,7 @@ body{
     margin-bottom: 40px;
     transition: all .8s ease-in-out;
     animation: 1s ease-out 0s 1 slideInFromTop;
+    box-shadow: 0px 1px 8px 0px black;
 }
 .header-light{
     background-color: hsl(225, 100%, 98%);
@@ -63,7 +78,6 @@ body{
 
 .header p{
     color: hsl(228, 12%, 44%);
-    margin-left: auto;
 }
 
 .select{
@@ -261,16 +275,3 @@ body{
     float: right;
 }
 
-
-
-@media (max-width:1150px){
-    .grid{
-        grid-template-columns: repeat(2, 260px);
-    }
- }
-
-@media (max-width: 640px){
-    .grid{
-        grid-template-columns: repeat(1, 260px);
-    }
-}
